@@ -1,19 +1,32 @@
 {
   "name": "scribbleton-live",
-  "version": "1.0.0",
+  "version": "0.8.3",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
     "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
+    "dev": "nuxt-ts dev",
     "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt-ts build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt-ts generate",
+    "start:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt-ts start",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^1.0.0",
+    "diff": "^4.0.2",
+    "file-saver": "^2.0.2",
+    "node-sass": "^4.14.1",
     "nuxt": "^2.14.0",
-    "nuxt-buefy": "^0.3.31"
+    "nuxt-buefy": "^0.3.31",
+    "sass-loader": "^9.0.2",
+    "scribbletune": "github:qchenevier/scribbletune#play-pattern",
+    "vue-clipboard2": "^0.3.1",
+    "vue-codemirror": "^4.0.6",
+    "vue-keypress": "^2.1.1",
+    "vue-p5": "^0.8.3",
+    "yaml": "^1.10.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.0",

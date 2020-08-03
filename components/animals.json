@@ -1,0 +1,933 @@
+[
+  {
+    "emoji": "🌸",
+    "name": "cherry blossom",
+    "unicode": "1f338",
+    "html": "&#127800;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "🌹",
+    "name": "rose",
+    "unicode": "1f339",
+    "html": "&#127801;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "🍃",
+    "name": "leaf fluttering in wind",
+    "unicode": "1f343",
+    "html": "&#127811;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🐧",
+    "name": "penguin",
+    "unicode": "1f427",
+    "html": "&#128039;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🍀",
+    "name": "four leaf clover",
+    "unicode": "1f340",
+    "html": "&#127808;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🌺",
+    "name": "hibiscus",
+    "unicode": "1f33a",
+    "html": "&#127802;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "🌴",
+    "name": "palm tree",
+    "unicode": "1f334",
+    "html": "&#127796;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🌻",
+    "name": "sunflower",
+    "unicode": "1f33b",
+    "html": "&#127803;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "💐",
+    "name": "bouquet",
+    "unicode": "1f490",
+    "html": "&#128144;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "🐶",
+    "name": "dog face",
+    "unicode": "1f436",
+    "html": "&#128054;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🌿",
+    "name": "herb",
+    "unicode": "1f33f",
+    "html": "&#127807;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🍂",
+    "name": "fallen leaf",
+    "unicode": "1f342",
+    "html": "&#127810;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🌷",
+    "name": "tulip",
+    "unicode": "1f337",
+    "html": "&#127799;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "🐱",
+    "name": "cat face",
+    "unicode": "1f431",
+    "html": "&#128049;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🌵",
+    "name": "cactus",
+    "unicode": "1f335",
+    "html": "&#127797;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🍁",
+    "name": "maple leaf",
+    "unicode": "1f341",
+    "html": "&#127809;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🌼",
+    "name": "blossom",
+    "unicode": "1f33c",
+    "html": "&#127804;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "🐷",
+    "name": "pig face",
+    "unicode": "1f437",
+    "html": "&#128055;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐝",
+    "name": "honeybee",
+    "unicode": "1f41d",
+    "html": "&#128029;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🐼",
+    "name": "panda",
+    "unicode": "1f43c",
+    "html": "&#128060;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐾",
+    "name": "paw prints",
+    "unicode": "1f43e",
+    "html": "&#128062;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐰",
+    "name": "rabbit face",
+    "unicode": "1f430",
+    "html": "&#128048;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐍",
+    "name": "snake",
+    "unicode": "1f40d",
+    "html": "&#128013;",
+    "category": "Animals & Nature (animal-reptile)"
+  },
+  {
+    "emoji": "🐢",
+    "name": "turtle",
+    "unicode": "1f422",
+    "html": "&#128034;",
+    "category": "Animals & Nature (animal-reptile)"
+  },
+  {
+    "emoji": "🐸",
+    "name": "frog",
+    "unicode": "1f438",
+    "html": "&#128056;",
+    "category": "Animals & Nature (animal-amphibian)"
+  },
+  {
+    "emoji": "🐣",
+    "name": "hatching chick",
+    "unicode": "1f423",
+    "html": "&#128035;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🐻",
+    "name": "bear",
+    "unicode": "1f43b",
+    "html": "&#128059;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐯",
+    "name": "tiger face",
+    "unicode": "1f42f",
+    "html": "&#128047;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🌾",
+    "name": "sheaf of rice",
+    "unicode": "1f33e",
+    "html": "&#127806;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🐙",
+    "name": "octopus",
+    "unicode": "1f419",
+    "html": "&#128025;",
+    "category": "Animals & Nature (animal-marine)"
+  },
+  {
+    "emoji": "🐳",
+    "name": "spouting whale",
+    "unicode": "1f433",
+    "html": "&#128051;",
+    "category": "Animals & Nature (animal-marine)"
+  },
+  {
+    "emoji": "🐬",
+    "name": "dolphin",
+    "unicode": "1f42c",
+    "html": "&#128044;",
+    "category": "Animals & Nature (animal-marine)"
+  },
+  {
+    "emoji": "🐥",
+    "name": "front-facing baby chick",
+    "unicode": "1f425",
+    "html": "&#128037;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🐒",
+    "name": "monkey",
+    "unicode": "1f412",
+    "html": "&#128018;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐘",
+    "name": "elephant",
+    "unicode": "1f418",
+    "html": "&#128024;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🌱",
+    "name": "seedling",
+    "unicode": "1f331",
+    "html": "&#127793;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🐦",
+    "name": "bird",
+    "unicode": "1f426",
+    "html": "&#128038;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🐐",
+    "name": "goat",
+    "unicode": "1f410",
+    "html": "&#128016;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐠",
+    "name": "tropical fish",
+    "unicode": "1f420",
+    "html": "&#128032;",
+    "category": "Animals & Nature (animal-marine)"
+  },
+  {
+    "emoji": "🌲",
+    "name": "evergreen tree",
+    "unicode": "1f332",
+    "html": "&#127794;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🐽",
+    "name": "pig nose",
+    "unicode": "1f43d",
+    "html": "&#128061;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐟",
+    "name": "fish",
+    "unicode": "1f41f",
+    "html": "&#128031;",
+    "category": "Animals & Nature (animal-marine)"
+  },
+  {
+    "emoji": "🐨",
+    "name": "koala",
+    "unicode": "1f428",
+    "html": "&#128040;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐛",
+    "name": "bug",
+    "unicode": "1f41b",
+    "html": "&#128027;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🐴",
+    "name": "horse face",
+    "unicode": "1f434",
+    "html": "&#128052;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐵",
+    "name": "monkey face",
+    "unicode": "1f435",
+    "html": "&#128053;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐺",
+    "name": "wolf",
+    "unicode": "1f43a",
+    "html": "&#128058;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐮",
+    "name": "cow face",
+    "unicode": "1f42e",
+    "html": "&#128046;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐔",
+    "name": "chicken",
+    "unicode": "1f414",
+    "html": "&#128020;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🐋",
+    "name": "whale",
+    "unicode": "1f40b",
+    "html": "&#128011;",
+    "category": "Animals & Nature (animal-marine)"
+  },
+  {
+    "emoji": "🌳",
+    "name": "deciduous tree",
+    "unicode": "1f333",
+    "html": "&#127795;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🐉",
+    "name": "dragon",
+    "unicode": "1f409",
+    "html": "&#128009;",
+    "category": "Animals & Nature (animal-reptile)"
+  },
+  {
+    "emoji": "🐹",
+    "name": "hamster",
+    "unicode": "1f439",
+    "html": "&#128057;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐭",
+    "name": "mouse face",
+    "unicode": "1f42d",
+    "html": "&#128045;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐤",
+    "name": "baby chick",
+    "unicode": "1f424",
+    "html": "&#128036;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🐑",
+    "name": "ewe",
+    "unicode": "1f411",
+    "html": "&#128017;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐎",
+    "name": "horse",
+    "unicode": "1f40e",
+    "html": "&#128014;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐓",
+    "name": "rooster",
+    "unicode": "1f413",
+    "html": "&#128019;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🐇",
+    "name": "rabbit",
+    "unicode": "1f407",
+    "html": "&#128007;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐞",
+    "name": "lady beetle",
+    "unicode": "1f41e",
+    "html": "&#128030;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🐊",
+    "name": "crocodile",
+    "unicode": "1f40a",
+    "html": "&#128010;",
+    "category": "Animals & Nature (animal-reptile)"
+  },
+  {
+    "emoji": "🐕",
+    "name": "dog",
+    "unicode": "1f415",
+    "html": "&#128021;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐈",
+    "name": "cat",
+    "unicode": "1f408",
+    "html": "&#128008;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐚",
+    "name": "spiral shell",
+    "unicode": "1f41a",
+    "html": "&#128026;",
+    "category": "Animals & Nature (animal-marine)"
+  },
+  {
+    "emoji": "🐩",
+    "name": "poodle",
+    "unicode": "1f429",
+    "html": "&#128041;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "💮",
+    "name": "white flower",
+    "unicode": "1f4ae",
+    "html": "&#128174;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "🐜",
+    "name": "ant",
+    "unicode": "1f41c",
+    "html": "&#128028;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🐲",
+    "name": "dragon face",
+    "unicode": "1f432",
+    "html": "&#128050;",
+    "category": "Animals & Nature (animal-reptile)"
+  },
+  {
+    "emoji": "🐌",
+    "name": "snail",
+    "unicode": "1f40c",
+    "html": "&#128012;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🐫",
+    "name": "two-hump camel",
+    "unicode": "1f42b",
+    "html": "&#128043;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐪",
+    "name": "camel",
+    "unicode": "1f42a",
+    "html": "&#128042;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐄",
+    "name": "cow",
+    "unicode": "1f404",
+    "html": "&#128004;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐖",
+    "name": "pig",
+    "unicode": "1f416",
+    "html": "&#128022;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐀",
+    "name": "rat",
+    "unicode": "1f400",
+    "html": "&#128000;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐏",
+    "name": "ram",
+    "unicode": "1f40f",
+    "html": "&#128015;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐅",
+    "name": "tiger",
+    "unicode": "1f405",
+    "html": "&#128005;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐗",
+    "name": "boar",
+    "unicode": "1f417",
+    "html": "&#128023;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐂",
+    "name": "ox",
+    "unicode": "1f402",
+    "html": "&#128002;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐡",
+    "name": "blowfish",
+    "unicode": "1f421",
+    "html": "&#128033;",
+    "category": "Animals & Nature (animal-marine)"
+  },
+  {
+    "emoji": "🐆",
+    "name": "leopard",
+    "unicode": "1f406",
+    "html": "&#128006;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐃",
+    "name": "water buffalo",
+    "unicode": "1f403",
+    "html": "&#128003;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐁",
+    "name": "mouse",
+    "unicode": "1f401",
+    "html": "&#128001;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🏵",
+    "name": "rosette",
+    "unicode": "1f3f5",
+    "html": "&#127989;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "☘",
+    "name": "shamrock",
+    "unicode": "2618",
+    "html": "&#9752;",
+    "category": "Animals & Nature (plant-other)"
+  },
+  {
+    "emoji": "🦄",
+    "name": "unicorn",
+    "unicode": "1F984",
+    "html": "&#129412;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦃",
+    "name": "turkey",
+    "unicode": "1f983",
+    "html": "&#129411;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🦂",
+    "name": "scorpion",
+    "unicode": "1f982",
+    "html": "&#129410;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🦁",
+    "name": "lion",
+    "unicode": "1f981",
+    "html": "&#129409;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🕸",
+    "name": "spider web",
+    "unicode": "1f578",
+    "html": "&#128376;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🕷",
+    "name": "spider",
+    "unicode": "1f577",
+    "html": "&#128375;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🕊",
+    "name": "dove",
+    "unicode": "1F54A",
+    "html": "&#128330;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🐿",
+    "name": "chipmunk",
+    "unicode": "1f43f",
+    "html": "&#128063;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦍",
+    "name": "gorilla",
+    "unicode": "1F98D",
+    "html": "&#x1F98D;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦧",
+    "name": "orangutan",
+    "unicode": "1F9A7",
+    "html": "&#x1F9A7;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦮",
+    "name": "guide dog",
+    "unicode": "1F9AE",
+    "html": "&#x1F9AE;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐕‍🦺",
+    "name": "service dog",
+    "unicode": "1F415 200D 1F9BA",
+    "html": "&#x1F415;&#x200D;&#x1F9BA;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦊",
+    "name": "fox",
+    "unicode": "1F98A",
+    "html": "&#x1F98A;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦝",
+    "name": "raccoon",
+    "unicode": "1F99D",
+    "html": "&#x1F99D;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦓",
+    "name": "zebra",
+    "unicode": "1F993",
+    "html": "&#x1F993;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦌",
+    "name": "deer",
+    "unicode": "1F98C",
+    "html": "&#x1F98C;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦙",
+    "name": "llama",
+    "unicode": "1F999",
+    "html": "&#x1F999;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦒",
+    "name": "giraffe",
+    "unicode": "1F992",
+    "html": "&#x1F992;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦏",
+    "name": "rhinoceros",
+    "unicode": "1F98F",
+    "html": "&#x1F98F;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦛",
+    "name": "hippopotamus",
+    "unicode": "1F99B",
+    "html": "&#x1F99B;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🐿️",
+    "name": "chipmunk",
+    "unicode": "1F43F FE0F",
+    "html": "&#x1F43F;&#xFE0F;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦔",
+    "name": "hedgehog",
+    "unicode": "1F994",
+    "html": "&#x1F994;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦇",
+    "name": "bat",
+    "unicode": "1F987",
+    "html": "&#x1F987;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦥",
+    "name": "sloth",
+    "unicode": "1F9A5",
+    "html": "&#x1F9A5;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦦",
+    "name": "otter",
+    "unicode": "1F9A6",
+    "html": "&#x1F9A6;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦨",
+    "name": "skunk",
+    "unicode": "1F9A8",
+    "html": "&#x1F9A8;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦘",
+    "name": "kangaroo",
+    "unicode": "1F998",
+    "html": "&#x1F998;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🦡",
+    "name": "badger",
+    "unicode": "1F9A1",
+    "html": "&#x1F9A1;",
+    "category": "Animals & Nature (animal-mammal)"
+  },
+  {
+    "emoji": "🕊️",
+    "name": "dove",
+    "unicode": "1F54A FE0F",
+    "html": "&#x1F54A;&#xFE0F;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🦅",
+    "name": "eagle",
+    "unicode": "1F985",
+    "html": "&#x1F985;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🦆",
+    "name": "duck",
+    "unicode": "1F986",
+    "html": "&#x1F986;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🦢",
+    "name": "swan",
+    "unicode": "1F9A2",
+    "html": "&#x1F9A2;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🦉",
+    "name": "owl",
+    "unicode": "1F989",
+    "html": "&#x1F989;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🦩",
+    "name": "flamingo",
+    "unicode": "1F9A9",
+    "html": "&#x1F9A9;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🦚",
+    "name": "peacock",
+    "unicode": "1F99A",
+    "html": "&#x1F99A;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🦜",
+    "name": "parrot",
+    "unicode": "1F99C",
+    "html": "&#x1F99C;",
+    "category": "Animals & Nature (animal-bird)"
+  },
+  {
+    "emoji": "🦎",
+    "name": "lizard",
+    "unicode": "1F98E",
+    "html": "&#x1F98E;",
+    "category": "Animals & Nature (animal-reptile)"
+  },
+  {
+    "emoji": "🦕",
+    "name": "sauropod",
+    "unicode": "1F995",
+    "html": "&#x1F995;",
+    "category": "Animals & Nature (animal-reptile)"
+  },
+  {
+    "emoji": "🦖",
+    "name": "T-Rex",
+    "unicode": "1F996",
+    "html": "&#x1F996;",
+    "category": "Animals & Nature (animal-reptile)"
+  },
+  {
+    "emoji": "🦈",
+    "name": "shark",
+    "unicode": "1F988",
+    "html": "&#x1F988;",
+    "category": "Animals & Nature (animal-marine)"
+  },
+  {
+    "emoji": "🦋",
+    "name": "butterfly",
+    "unicode": "1F98B",
+    "html": "&#x1F98B;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🦗",
+    "name": "cricket",
+    "unicode": "1F997",
+    "html": "&#x1F997;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🕷️",
+    "name": "spider",
+    "unicode": "1F577 FE0F",
+    "html": "&#x1F577;&#xFE0F;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🕸️",
+    "name": "spider web",
+    "unicode": "1F578 FE0F",
+    "html": "&#x1F578;&#xFE0F;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🦟",
+    "name": "mosquito",
+    "unicode": "1F99F",
+    "html": "&#x1F99F;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🦠",
+    "name": "microbe",
+    "unicode": "1F9A0",
+    "html": "&#x1F9A0;",
+    "category": "Animals & Nature (animal-bug)"
+  },
+  {
+    "emoji": "🏵️",
+    "name": "rosette",
+    "unicode": "1F3F5 FE0F",
+    "html": "&#x1F3F5;&#xFE0F;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "🥀",
+    "name": "wilted flower",
+    "unicode": "1F940",
+    "html": "&#x1F940;",
+    "category": "Animals & Nature (plant-flower)"
+  },
+  {
+    "emoji": "☘️",
+    "name": "shamrock",
+    "unicode": "2618 FE0F",
+    "html": "&#x2618;&#xFE0F;",
+    "category": "Animals & Nature (plant-other)"
+  }
+]

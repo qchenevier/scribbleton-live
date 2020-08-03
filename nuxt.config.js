@@ -1,3 +1,12 @@
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/scribbleton-live/',
+        },
+      }
+    : {}
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -15,6 +24,11 @@ export default {
    */
   head: {
     title: process.env.npm_package_name || '',
+    script: [
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.33/Tone.js',
+      },
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -55,5 +69,13 @@ export default {
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
-  build: {},
+  build: {
+    postcss: false,
+    extend(config, { isDev, isClient }) {
+      config.node = {
+        fs: 'empty',
+      }
+    },
+  },
+  ...routerBase,
 }
