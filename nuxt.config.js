@@ -23,7 +23,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Scribbleton Live',
     script: [
       {
         src: 'https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.33/Tone.js',
