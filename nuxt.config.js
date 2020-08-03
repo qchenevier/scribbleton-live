@@ -43,7 +43,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@mdi/font/css/materialdesignicons.css'],
   /*
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
@@ -63,7 +63,7 @@ export default {
    */
   modules: [
     // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy',
+    ['nuxt-buefy', { materialDesignIcons: false }],
   ],
   /*
    ** Build configuration

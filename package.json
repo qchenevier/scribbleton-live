@@ -14,6 +14,7 @@
     "lint": "npm run lint:js"
   },
   "dependencies": {
+    "@mdi/font": "^5.4.55",
     "@nuxt/typescript-runtime": "^1.0.0",
     "diff": "^4.0.2",
     "file-saver": "^2.0.2",
