@@ -1,5 +1,13 @@
 <template>
-  <VueP5 @setup="setup" @draw="draw" />
+  <div @click="toggleActive">
+    <VueP5 v-if="isActive" @setup="setup" @draw="draw" />
+    <b-skeleton
+      width="260px"
+      height="56px"
+      :animated="false"
+      v-if="!isActive"
+    />
+  </div>
 </template>
 
 <script>
@@ -13,9 +21,13 @@ export default {
       analyzer: undefined,
       fft: undefined,
       meter: undefined,
+      isActive: true,
     }
   },
   methods: {
+    toggleActive() {
+      this.isActive = !this.isActive
+    },
     setup(sketch) {
       sketch.createCanvas(260, 50)
       sketch.frameRate(20)
