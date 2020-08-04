@@ -93,7 +93,7 @@
           v-model="input.effects[idEffect]"
           :closeButton="true"
           @close="removeEffect"
-          height="100px"
+          height="140px"
         />
       </div>
     </div>

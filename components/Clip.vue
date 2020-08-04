@@ -3,7 +3,7 @@
     :key="`clips-${id}`"
     :value="value"
     @input="(v) => $emit('input', v)"
-    height="100px"
+    height="140px"
   />
 </template>
 
