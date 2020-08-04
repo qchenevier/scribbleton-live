@@ -13,9 +13,9 @@
     <div class="columns container is-fluid" style="overflow-x: auto;">
       <PlayPattern
         :isPlayPattern="isPlayPattern"
-        :playPattern="playPattern"
         :playPatternId="playPatternId"
-        :rowNumberToPlay="rowNumberToPlay"
+        :playPattern.sync="playPattern"
+        :rowNumberToPlay.sync="rowNumberToPlay"
         @toggleVariable="toggleVariable"
       />
       <Channel
@@ -68,11 +68,10 @@ export default {
       isPlayPattern: true,
       rowNumberToPlay: 0,
       playPatternId: randomHash(),
-      playPatternDefault: {
+      playPattern: {
         clipDuration: '2:0:0',
         channelPatterns: [],
       },
-      playPatternValue: undefined,
     }
   },
   computed: {
@@ -84,15 +83,10 @@ export default {
         }
       },
       set(loadedLiveSession) {
-        this.playPatternValue = loadedLiveSession.playPattern
+        this.playPattern = loadedLiveSession.playPattern
         this.channels = {}
         loadedLiveSession.channels.forEach(this.addChannel)
         this.updatePlayPattern()
-      },
-    },
-    playPattern: {
-      get() {
-        return this.playPatternValue || this.playPatternDefault
       },
     },
     watchPropsForSessionRebuild() {
@@ -252,22 +246,21 @@ export default {
       })
     },
     updatePlayPattern() {
-      this.playPatternValue = this.playPatternValue || this.playPatternDefault
       this.$set(
-        this.playPatternValue,
+        this.playPattern,
         'channelPatterns',
-        this.playPatternValue.channelPatterns?.filter((c) =>
+        this.playPattern.channelPatterns?.filter((c) =>
           this.channelsIdx.includes(c.channelIdx)
         )
       )
       const orphanChannelsIdx = this.channelsIdx.filter(
         (idx) =>
-          !this.playPatternValue.channelPatterns
+          !this.playPattern.channelPatterns
             .map((c) => c.channelIdx)
             .includes(idx)
       )
       orphanChannelsIdx.forEach((idx) =>
-        this.playPatternValue.channelPatterns.push({
+        this.playPattern.channelPatterns.push({
           channelIdx: idx,
           pattern: '0___',
         })

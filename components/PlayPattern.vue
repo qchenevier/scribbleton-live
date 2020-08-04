@@ -26,7 +26,7 @@
         <ParamsEditor
           :key="playPatternId"
           :value="playPattern"
-          @input="(v) => $emit('playPattern', v)"
+          @input="(v) => $emit('update:playPattern', v)"
           height="260px"
         />
       </b-collapse>
@@ -51,7 +51,7 @@
         </div>
         <b-input
           :value="rowNumberToPlay"
-          @change.native="$emit('rowNumberToPlay', $event.target.value)"
+          @change.native="$emit('update:rowNumberToPlay', $event.target.value)"
           :disabled="isPlayPattern"
         />
       </b-collapse>
