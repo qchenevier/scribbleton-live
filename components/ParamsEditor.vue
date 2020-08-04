@@ -121,7 +121,6 @@ export default {
 <style scoped>
 /deep/ .CodeMirror {
   font-size: 14px;
-  height: 300px;
   direction: ltr;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
     DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;

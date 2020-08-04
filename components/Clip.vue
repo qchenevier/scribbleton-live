@@ -35,8 +35,4 @@ export default {
 }
 </script>
 
-<style scoped>
-/deep/ .CodeMirror {
-  height: 100px;
-}
-</style>
+<style scoped></style>
