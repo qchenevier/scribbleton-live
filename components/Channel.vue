@@ -3,7 +3,7 @@
     <div class="box is-6">
       <div class="level" style="margin-top: 0; margin-bottom: 0;">
         <!-- lazy input change for buefy component https://github.com/buefy/buefy/issues/401 -->
-        <div class="title is-6">Channel</div>
+        <div class="title is-5">Channel</div>
         <div class="level-right">
           <b-tooltip
             label="Play/Pause"
@@ -13,7 +13,6 @@
           >
             <b-button
               rounded
-              size="is-small"
               :type="input.isActive ? '' : 'is-link'"
               @click="$set(input, 'isActive', !input.isActive)"
               outlined
@@ -28,7 +27,6 @@
           >
             <b-button
               rounded
-              size="is-small"
               :type="input.offlineRendering ? 'is-link' : ''"
               @click="$set(input, 'offlineRendering', !input.offlineRendering)"
               outlined
@@ -44,7 +42,6 @@
             <b-button
               rounded
               icon-left="close"
-              size="is-small"
               @click="$emit('close', id)"
               style="margin-right: unset;"
             />
@@ -58,10 +55,8 @@
           type="is-link"
           position="is-bottom"
           multilined
-          size="is-small"
         >
           <b-input
-            size="is-small"
             :value="input.idx"
             @change.native="$set(input, 'idx', $event.target.value)"
             rounded
@@ -70,25 +65,24 @@
         <b-button
           rounded
           icon-left="creation"
-          size="is-small"
           @click="addEffect"
           style="margin-left: 0.5em; margin-right: unset;"
         >
           Add effect
         </b-button>
       </div>
-      <div class="subtitle is-6">
+      <div class="subtitle is-5">
         Clips
       </div>
       <Clip :key="`clip-${id}`" v-model="input.clips" />
-      <div class="subtitle is-6">Instrument</div>
+      <div class="subtitle is-5">Instrument</div>
       <Instrument
         :key="`instrument-${id}`"
         :names="instrumentNames"
         v-model="input.instrument"
       />
       <div v-if="Object.values(input.effects).length">
-        <div v-if="Object.values(input.effects).length" class="subtitle is-6">
+        <div v-if="Object.values(input.effects).length" class="subtitle is-5">
           Effects
         </div>
         <Instrument

@@ -2,28 +2,14 @@
   <div class="column is-narrow" style="padding-left: 1px;">
     <div class="box" style="margin-left: 0px;">
       <div class="level" style="margin-top: 0; margin-bottom: 0;">
-        <div class="title is-6">
+        <div class="title is-5">
           Play {{ isPlayPattern ? 'pattern' : 'clip' }}
         </div>
-        <div class="level" style="font-size: 0.75rem;">
-          Pattern &nbsp;
-          <b-switch
-            type="is-link"
-            passive-type="is-link"
-            size="is-small"
-            :value="!isPlayPattern"
-            @input="$emit('toggleVariable', 'isPlayPattern')"
-          >
-            Clip</b-switch
-          >
-        </div>
       </div>
-
       <b-collapse
         class="div"
         animation="slide"
         :open="isPlayPattern"
-        :style="!isPlayPattern ? 'text-decoration: line-through' : ''"
         @open="$emit('toggleVariable', 'isPlayPattern')"
         @close="$emit('toggleVariable', 'isPlayPattern')"
       >
@@ -31,11 +17,11 @@
           slot="trigger"
           slot-scope="props"
           role="button"
-          class="subtitle is-6"
+          class="subtitle is-5"
+          :class="!isPlayPattern ? 'disabled' : ''"
         >
           Pattern
-          <b-icon size="is-small" :icon="props.open ? 'menu-down' : 'menu-up'">
-          </b-icon>
+          <b-icon :icon="props.open ? 'menu-down' : 'menu-up'"> </b-icon>
         </div>
         <ParamsEditor
           :key="playPatternId"
@@ -49,7 +35,6 @@
         class="div"
         animation="slide"
         :open="!isPlayPattern"
-        :style="isPlayPattern ? 'text-decoration: line-through' : ''"
         @open="$emit('toggleVariable', 'isPlayPattern')"
         @close="$emit('toggleVariable', 'isPlayPattern')"
       >
@@ -57,15 +42,14 @@
           slot="trigger"
           slot-scope="props"
           role="button"
-          class="subtitle is-6"
+          class="subtitle is-5"
+          :class="isPlayPattern ? 'disabled' : ''"
           style=""
         >
           Clip
-          <b-icon size="is-small" :icon="props.open ? 'menu-down' : 'menu-up'">
-          </b-icon>
+          <b-icon :icon="props.open ? 'menu-down' : 'menu-up'"> </b-icon>
         </div>
         <b-input
-          size="is-small"
           :value="rowNumberToPlay"
           @change.native="$emit('rowNumberToPlay', $event.target.value)"
           :disabled="isPlayPattern"
@@ -89,4 +73,10 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+@import '~bulma';
+
+.disabled {
+  color: $grey-light;
+}
+</style>

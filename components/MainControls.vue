@@ -19,7 +19,6 @@
         >
           <b-button
             rounded
-            size="is-small"
             :type="this.isPlaying ? 'is-dark' : 'is-link'"
             @click="$emit('toggleVariable', 'isPlaying')"
             :loading="this.isRendering"
@@ -36,19 +35,13 @@
         >
           <b-button
             rounded
-            size="is-small"
             :type="this.isAutoReplay ? 'is-link' : ''"
             @click="$emit('toggleVariable', 'isAutoReplay')"
             outlined
             icon-left="step-forward"
           />
         </b-tooltip>
-        <b-button
-          rounded
-          icon-left="plus"
-          size="is-small"
-          @click="$emit('addChannel')"
-        >
+        <b-button rounded icon-left="plus" @click="$emit('addChannel')">
           Add channel
         </b-button>
       </div>

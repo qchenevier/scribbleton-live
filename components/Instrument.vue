@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <div class="level">
-      <b-select size="is-small" v-model="input.name">
+      <b-select v-model="input.name">
         <option v-for="n in names" :value="n">{{ n }} </option>
       </b-select>
       <b-tooltip
@@ -13,7 +13,6 @@
         <b-button
           rounded
           icon-left="close"
-          size="is-small"
           v-if="closeButton"
           @click="$emit('close', id)"
         />

@@ -24,12 +24,11 @@
           type="is-link"
           position="is-bottom"
           multilined
-          size="is-small"
         >
           <b-field class="file">
-            <b-upload size="is-small" v-model="file">
-              <div>
-                <b-icon size="is-small" icon="upload" />
+            <b-upload v-model="file">
+              <div class="level">
+                <b-icon icon="upload" />
                 <span>Load</span>
               </div>
             </b-upload>
@@ -43,25 +42,23 @@
           type="is-link"
           position="is-bottom"
           multilined
-          size="is-small"
         >
-          <div @click="saveJson">
-            <b-icon size="is-small" icon="download" />
+          <div class="level" @click="saveJson">
+            <b-icon icon="download" />
             <span>Save</span>
           </div>
         </b-tooltip>
       </b-navbar-item>
       <b-navbar-item>
         <b-tooltip
-          label="Save all application satet in a permalink, easy to share"
+          label="Save application state in a permalink, easy to share"
           :delay="1000"
           type="is-link"
           position="is-bottom"
           multilined
-          size="is-small"
         >
-          <div @click="getLink">
-            <b-icon size="is-small" icon="share-variant" />
+          <div class="level" @click="getLink">
+            <b-icon icon="share-variant" />
             <span>Share</span>
           </div>
         </b-tooltip>
@@ -162,4 +159,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+/deep/ .icon {
+  margin-right: 0.25em;
+}
+</style>

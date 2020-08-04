@@ -330,7 +330,7 @@ $box-padding: 0.75rem;
 }
 .box {
   margin: 0.25rem;
-  width: 18.5rem;
+  width: 20rem;
 }
 .button.is-rounded {
   padding-left: 0.75em;
