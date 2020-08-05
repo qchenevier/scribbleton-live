@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="column is-narrow">
     <div class="box is-6">
-      <div class="level" style="margin-top: 0; margin-bottom: 0;">
+      <div class="level">
         <!-- lazy input change for buefy component https://github.com/buefy/buefy/issues/401 -->
         <div class="title is-5">Channel</div>
         <div class="level-right">

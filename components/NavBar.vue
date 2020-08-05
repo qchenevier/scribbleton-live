@@ -1,5 +1,5 @@
 <template>
-  <b-navbar wrapper-class="container is-fluid">
+  <b-navbar wrapper-class="container is-fluid" shadow>
     <template slot="brand">
       <b-navbar-item>
         <h1 class="title">

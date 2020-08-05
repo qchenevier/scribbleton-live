@@ -309,23 +309,27 @@ export default {
 // see https://buefy.org/documentation/customization/
 @import '~bulma/sass/utilities/_all';
 
-$box-padding: 0.75rem;
-
 @import '~bulma';
 @import '~buefy/src/scss/buefy';
 
-.level,
-.level:not(:last-child),
-.subtitle,
-.subtitle:not(:last-child),
-.title,
-.title:not(:last-child) {
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+.box .level:first-child {
+  margin-top: unset;
 }
+.box .level,
+.box .subtitle {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.level .title,
+.upload .level {
+  margin-bottom: unset;
+}
+
 .box {
   margin: 0.25rem;
   width: 20rem;
+  padding: 1rem;
 }
 .button.is-rounded {
   padding-left: 0.75em;
@@ -334,5 +338,13 @@ $box-padding: 0.75rem;
 }
 .custom-tooltip.b-tooltip:after {
   white-space: pre;
+}
+
+.disabled {
+  color: $grey-light;
+}
+.more-top-margin {
+  margin-top: unset;
+  margin-top: 1rem;
 }
 </style>

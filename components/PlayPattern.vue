@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="column is-narrow" style="padding-left: 1px;">
     <div class="box" style="margin-left: 0px;">
-      <div class="level" style="margin-top: 0; margin-bottom: 0;">
+      <div class="level">
         <div class="title is-5">
           Play {{ isPlayPattern ? 'pattern' : 'clip' }}
         </div>
@@ -72,11 +72,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-@import '~bulma';
-
-.disabled {
-  color: $grey-light;
-}
-</style>
