@@ -73,6 +73,7 @@ export default {
     isPlaying: { default: false },
     isRendering: { default: false },
     isAutoReplay: { default: false },
+    songName: { default: undefined },
   },
 }
 </script>

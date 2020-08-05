@@ -6,6 +6,7 @@
       :isPlaying="isPlaying"
       :isRendering="isRendering"
       :isAutoReplay="isAutoReplay"
+      :songName.sync="songName"
       @toggleVariable="toggleVariable"
       @addChannel="addChannel"
     />
@@ -72,6 +73,7 @@ export default {
         clipDuration: '2:0:0',
         channelPatterns: [],
       },
+      songName: undefined,
     }
   },
   computed: {
@@ -80,10 +82,12 @@ export default {
         return {
           channels: Object.values(this.channels),
           playPattern: this.playPattern,
+          songName: this.songName,
         }
       },
       set(loadedLiveSession) {
         this.playPattern = loadedLiveSession.playPattern
+        this.songName = loadedLiveSession.songName
         this.channels = {}
         loadedLiveSession.channels.forEach(this.addChannel)
         this.updatePlayPattern()

@@ -91,7 +91,7 @@ export default {
       var blob = new Blob([serializedChannels], {
         type: 'text/plain;charset=utf-8',
       })
-      saveAs(blob, 'scribbleton-live.json')
+      saveAs(blob, this.value.songName + '.json' || 'scribbleton-live.json')
     },
     getLink() {
       let url =
