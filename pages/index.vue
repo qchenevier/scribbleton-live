@@ -336,8 +336,8 @@ export default {
   padding: 1rem;
 }
 .button.is-rounded {
-  padding-left: 0.75em;
-  padding-right: 0.75em;
+  padding-left: 1em;
+  padding-right: 1em;
   margin-right: 0.5em;
 }
 .custom-tooltip.b-tooltip:after {
