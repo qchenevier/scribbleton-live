@@ -64,6 +64,7 @@ export default {
   modules: [
     // Doc: https://buefy.github.io/#/documentation
     ['nuxt-buefy', { materialDesignIcons: false }],
+    '@nuxt/content',
   ],
   /*
    ** Build configuration

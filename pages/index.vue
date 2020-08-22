@@ -2,8 +2,8 @@
   <div>
     <NavBar
       v-model="scribbletonLiveSession"
-      @activeHelpModal="isModalActive = true"
-      @activeAboutModal="isModalActive = true"
+      @activeDocModal="isDocModalActive = true"
+      @activeAboutModal="isAboutModalActive = true"
     />
 
     <MainControls
@@ -30,10 +30,11 @@
         @close="removeChannel"
       />
     </div>
-    <b-modal v-model="isModalActive">
-      <div class="box" style="width: unset;">
-        <p>Coming soon.</p>
-      </div>
+    <b-modal v-model="isDocModalActive">
+      <MarkdownModal file="help" />
+    </b-modal>
+    <b-modal v-model="isAboutModalActive">
+      <MarkdownModal file="about" />
     </b-modal>
   </div>
 </template>
@@ -45,6 +46,7 @@ import Channel from '~/components/Channel.vue'
 import NavBar from '~/components/NavBar.vue'
 import PlayPattern from '~/components/PlayPattern.vue'
 import MainControls from '~/components/MainControls.vue'
+import MarkdownModal from '~/components/MarkdownModal.vue'
 
 function randomHash() {
   return Math.floor(Math.random() * 0xffffff)
@@ -83,7 +85,8 @@ export default {
         channelPatterns: [],
       },
       songName: undefined,
-      isModalActive: false,
+      isDocModalActive: false,
+      isAboutModalActive: false,
     }
   },
   computed: {

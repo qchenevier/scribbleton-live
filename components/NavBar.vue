@@ -79,15 +79,15 @@
       </b-navbar-item>
       <b-navbar-item>
         <b-tooltip
-          label="Help"
+          label="Doc"
           :delay="1000"
           type="is-link"
           position="is-bottom"
           multilined
         >
-          <div class="level" @click="$emit('activeHelpModal')">
+          <div class="level" @click="$emit('activeDocModal')">
             <b-icon icon="help-circle-outline" />
-            <span>Help</span>
+            <span>Doc</span>
           </div>
         </b-tooltip>
       </b-navbar-item>
