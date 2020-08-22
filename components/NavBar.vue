@@ -63,6 +63,48 @@
           </div>
         </b-tooltip>
       </b-navbar-item>
+      <b-navbar-item href="https://discord.gg/jJHQWd8" target="_blank">
+        <b-tooltip
+          label="Chat with the scribbletune & scribbleton.live community"
+          :delay="1000"
+          type="is-link"
+          position="is-bottom"
+          multilined
+        >
+          <div class="level">
+            <b-icon icon="forum" />
+            <span>Chat</span>
+          </div>
+        </b-tooltip>
+      </b-navbar-item>
+      <b-navbar-item>
+        <b-tooltip
+          label="Help"
+          :delay="1000"
+          type="is-link"
+          position="is-bottom"
+          multilined
+        >
+          <div class="level" @click="$emit('activeHelpModal')">
+            <b-icon icon="help-circle-outline" />
+            <span>Help</span>
+          </div>
+        </b-tooltip>
+      </b-navbar-item>
+      <b-navbar-item>
+        <b-tooltip
+          label="About this site"
+          :delay="1000"
+          type="is-link"
+          position="is-bottom"
+          multilined
+        >
+          <div class="level" @click="$emit('activeAboutModal')">
+            <b-icon icon="information-outline" />
+            <span>About</span>
+          </div>
+        </b-tooltip>
+      </b-navbar-item>
     </template>
   </b-navbar>
 </template>

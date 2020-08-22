@@ -1,6 +1,10 @@
 <template>
   <div>
-    <NavBar v-model="scribbletonLiveSession" />
+    <NavBar
+      v-model="scribbletonLiveSession"
+      @activeHelpModal="isModalActive = true"
+      @activeAboutModal="isModalActive = true"
+    />
 
     <MainControls
       :isPlaying="isPlaying"
@@ -26,6 +30,11 @@
         @close="removeChannel"
       />
     </div>
+    <b-modal v-model="isModalActive">
+      <div class="box" style="width: unset;">
+        <p>Coming soon.</p>
+      </div>
+    </b-modal>
   </div>
 </template>
 
@@ -74,6 +83,7 @@ export default {
         channelPatterns: [],
       },
       songName: undefined,
+      isModalActive: false,
     }
   },
   computed: {
