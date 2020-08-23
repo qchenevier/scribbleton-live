@@ -67,6 +67,7 @@ export default {
     NavBar,
     PlayPattern,
     MainControls,
+    MarkdownModal,
   },
   data() {
     return {

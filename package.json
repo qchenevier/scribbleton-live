@@ -28,6 +28,7 @@
     "vue-codemirror": "^4.0.6",
     "vue-keypress": "^2.1.1",
     "vue-p5": "^0.8.3",
+    "vue-scrollactive": "^0.9.3",
     "yaml": "^1.10.0"
   },
   "devDependencies": {
