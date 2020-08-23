@@ -31,7 +31,7 @@
       />
     </div>
     <b-modal v-model="isDocModalActive">
-      <MarkdownModal file="help" />
+      <MarkdownModal file="doc" />
     </b-modal>
     <b-modal v-model="isAboutModalActive">
       <MarkdownModal file="about" />
