@@ -1,7 +1,7 @@
 <template>
   <div class="box columns" style="width: unset;">
     <MarkdownToc :document="document" :key="tocKey" />
-    <nuxt-content class="column content" :document="document" />
+    <nuxt-content class="column content custom-font" :document="document" />
   </div>
 </template>
 
@@ -28,5 +28,14 @@ export default {
 }
 .icon.icon-link {
   display: none;
+}
+.content.custom-font h1 {
+  font-size: 1.75em;
+}
+.content.custom-font h2 {
+  font-size: 1.45em;
+}
+.content.custom-font h3 {
+  font-size: 1.15em;
 }
 </style>

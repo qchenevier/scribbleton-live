@@ -1,5 +1,5 @@
 <template>
-  <div v-if="document.toc.length" class="column is-2 is-sticky">
+  <div v-if="document.toc.length" class="column is-3 is-sticky px-1">
     <b-menu>
       <b-menu-list :label="document.title">
         <scrollactive
@@ -17,7 +17,7 @@
             :href="`#${link.id}`"
             :class="`scrollactive-item px-2 py-${link.depth == 3 ? 1 : 2} ml-${
               link.depth == 3 ? 2 : 0
-            } is-size-${link.depth == 3 ? 6 : 5}`"
+            } is-size-${link.depth == 3 ? 7 : 6}`"
             style="pointer-events: none;"
           >
             {{ link.text }}
