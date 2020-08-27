@@ -38,4 +38,7 @@ export default {
 .content.custom-font h3 {
   font-size: 1.15em;
 }
+.content.custom-font h4 {
+  font-size: 1em;
+}
 </style>
