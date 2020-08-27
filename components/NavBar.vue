@@ -10,6 +10,9 @@
             style="margin-left: 0.75rem; margin-right: 0.75rem;"
           />
           Scribbleton Live
+          <sub style="font-size: 0.5em;" class="has-text-weight-normal">
+            alpha
+          </sub>
         </h1>
       </b-navbar-item>
       <b-navbar-item>
@@ -17,52 +20,82 @@
       </b-navbar-item>
     </template>
     <template slot="start">
-      <b-navbar-item>
-        <b-tooltip
-          label="Load JSON file from computer"
-          :delay="1000"
-          type="is-link"
-          position="is-bottom"
-          multilined
-        >
-          <b-field class="file">
-            <b-upload v-model="file">
-              <div class="level">
+      <b-navbar-dropdown label="File" hoverable>
+        <b-navbar-item>
+          <b-tooltip
+            label="Load JSON file from computer"
+            :delay="1000"
+            type="is-link"
+            position="is-bottom"
+            multilined
+          >
+            <b-field class="file">
+              <b-upload v-model="file" class="level">
                 <b-icon icon="upload" />
-                <span>Load</span>
-              </div>
-            </b-upload>
-          </b-field>
-        </b-tooltip>
-      </b-navbar-item>
-      <b-navbar-item>
-        <b-tooltip
-          label="Save JSON file locally"
-          :delay="1000"
-          type="is-link"
-          position="is-bottom"
-          multilined
-        >
-          <div class="level" @click="saveJson">
-            <b-icon icon="download" />
-            <span>Save</span>
-          </div>
-        </b-tooltip>
-      </b-navbar-item>
-      <b-navbar-item>
-        <b-tooltip
-          label="Save application state in a permalink, easy to share"
-          :delay="1000"
-          type="is-link"
-          position="is-bottom"
-          multilined
-        >
-          <div class="level" @click="getLink">
-            <b-icon icon="share-variant" />
-            <span>Share</span>
-          </div>
-        </b-tooltip>
-      </b-navbar-item>
+                <span style="font-size: 0.875rem;">Load JSON</span>
+              </b-upload>
+            </b-field>
+          </b-tooltip>
+        </b-navbar-item>
+        <b-navbar-item>
+          <b-tooltip
+            label="Save JSON file locally"
+            :delay="1000"
+            type="is-link"
+            position="is-bottom"
+            multilined
+          >
+            <div class="level" @click="saveJson">
+              <b-icon icon="download" />
+              <span>Save JSON</span>
+            </div>
+          </b-tooltip>
+        </b-navbar-item>
+        <b-navbar-item>
+          <b-tooltip
+            label="Save application state in a permalink, easy to share"
+            :delay="1000"
+            type="is-link"
+            position="is-bottom"
+            multilined
+          >
+            <div class="level" @click="getLink">
+              <b-icon icon="share-variant" />
+              <span>Save link</span>
+            </div>
+          </b-tooltip>
+        </b-navbar-item>
+      </b-navbar-dropdown>
+      <b-navbar-dropdown label="Help" hoverable>
+        <b-navbar-item>
+          <b-tooltip
+            label="Documentation of the app & references to other documentations"
+            :delay="1000"
+            type="is-link"
+            position="is-bottom"
+            multilined
+          >
+            <div class="level" @click="$emit('activeDocModal')">
+              <b-icon icon="book-open" />
+              <span>Documentation</span>
+            </div>
+          </b-tooltip>
+        </b-navbar-item>
+        <b-navbar-item>
+          <b-tooltip
+            label="About this app: why? who?"
+            :delay="1000"
+            type="is-link"
+            position="is-bottom"
+            multilined
+          >
+            <div class="level" @click="$emit('activeAboutModal')">
+              <b-icon icon="information-outline" />
+              <span>About</span>
+            </div>
+          </b-tooltip>
+        </b-navbar-item>
+      </b-navbar-dropdown>
       <b-navbar-item href="https://discord.gg/jJHQWd8" target="_blank">
         <b-tooltip
           label="Chat with the scribbletune & scribbleton.live community"
@@ -74,34 +107,6 @@
           <div class="level">
             <b-icon icon="forum" />
             <span>Chat</span>
-          </div>
-        </b-tooltip>
-      </b-navbar-item>
-      <b-navbar-item>
-        <b-tooltip
-          label="Doc"
-          :delay="1000"
-          type="is-link"
-          position="is-bottom"
-          multilined
-        >
-          <div class="level" @click="$emit('activeDocModal')">
-            <b-icon icon="help-circle-outline" />
-            <span>Doc</span>
-          </div>
-        </b-tooltip>
-      </b-navbar-item>
-      <b-navbar-item>
-        <b-tooltip
-          label="About this site"
-          :delay="1000"
-          type="is-link"
-          position="is-bottom"
-          multilined
-        >
-          <div class="level" @click="$emit('activeAboutModal')">
-            <b-icon icon="information-outline" />
-            <span>About</span>
           </div>
         </b-tooltip>
       </b-navbar-item>
@@ -203,6 +208,6 @@ export default {
 
 <style scoped>
 /deep/ .icon {
-  margin-right: 0.25em;
+  margin-right: 0.35em;
 }
 </style>
