@@ -10,13 +10,21 @@
       <div class="columns" style="margin-bottom: -1.7rem;">
         <div class="column is-narrow">
           <div class="box borderless">
-            <b-input
-              :value="songName"
-              placeholder="Song name"
-              @change.native="$emit('update:songName', $event.target.value)"
-              rounded
+            <b-tooltip
+              label="Song name, used to compute JSON file name when saving."
+              :delay="1000"
+              type="is-link"
+              position="is-bottom"
+              multilined
             >
-            </b-input>
+              <b-input
+                :value="songName"
+                placeholder="Song name"
+                @change.native="$emit('update:songName', $event.target.value)"
+                rounded
+              >
+              </b-input>
+            </b-tooltip>
           </div>
         </div>
         <div class="column is-narrow">
@@ -40,7 +48,7 @@
             </b-tooltip>
             <b-tooltip
               position="is-bottom"
-              label="Auto-replay after prerender"
+              label="Auto-replay audio after being paused for prerendering"
               :delay="1000"
               type="is-link"
               multilined
@@ -54,9 +62,17 @@
                 icon-left="step-forward"
               />
             </b-tooltip>
-            <b-button rounded icon-left="plus" @click="$emit('addChannel')">
-              Add channel
-            </b-button>
+            <b-tooltip
+              label="Add a new scribbletune channel with a random name"
+              :delay="1000"
+              type="is-link"
+              position="is-top"
+              multilined
+            >
+              <b-button rounded icon-left="plus" @click="$emit('addChannel')">
+                Add channel
+              </b-button>
+            </b-tooltip>
           </div>
         </div>
       </div>

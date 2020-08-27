@@ -1,10 +1,19 @@
 <template lang="html">
-  <ParamsEditor
-    :key="`clips-${id}`"
-    :value="value"
-    @input="(v) => $emit('input', v)"
-    height="140px"
-  />
+  <b-tooltip
+    label="scribbletune clip configuration in YAML, click inside to edit, click outside to save"
+    :delay="1000"
+    type="is-link"
+    position="is-top"
+    multilined
+    style="width: 100%;"
+  >
+    <ParamsEditor
+      :key="`clips-${id}`"
+      :value="value"
+      @input="(v) => $emit('input', v)"
+      height="140px"
+    />
+  </b-tooltip>
 </template>
 
 <script>

@@ -6,7 +6,7 @@
         <div class="title is-5">Channel</div>
         <div class="level-right">
           <b-tooltip
-            label="Play/Pause"
+            label="Play/Mute channel"
             :delay="1000"
             type="is-link"
             position="is-bottom"
@@ -20,10 +20,11 @@
             />
           </b-tooltip>
           <b-tooltip
-            label="Prerender"
+            label="Prerender audio for improved performance, each time parameters are modified"
             :delay="1000"
             type="is-link"
             position="is-bottom"
+            multilined
           >
             <b-button
               rounded
@@ -50,7 +51,7 @@
       </div>
       <div class="level">
         <b-tooltip
-          label="'channelIdx' property used in Play pattern"
+          label="Channel name, which is the 'channelIdx' property used in play pattern. You can group channels together by giving them the same name."
           :delay="1000"
           type="is-link"
           position="is-bottom"
@@ -62,14 +63,22 @@
             rounded
           />
         </b-tooltip>
-        <b-button
-          rounded
-          icon-left="creation"
-          @click="addEffect"
-          style="margin-left: 0.5em; margin-right: unset;"
+        <b-tooltip
+          label="Add audio effect(s), applied on instrument output"
+          :delay="1000"
+          type="is-link"
+          position="is-bottom"
+          multilined
         >
-          Add effect
-        </b-button>
+          <b-button
+            rounded
+            icon-left="creation"
+            @click="addEffect"
+            style="margin-left: 0.5em; margin-right: unset;"
+          >
+            Add effect
+          </b-button>
+        </b-tooltip>
       </div>
       <div class="subtitle is-5">
         Clips
@@ -81,6 +90,7 @@
         :names="instrumentNames"
         v-model="input.instrument"
       />
+
       <div v-if="Object.values(input.effects).length">
         <div v-if="Object.values(input.effects).length" class="subtitle is-5">
           Effects

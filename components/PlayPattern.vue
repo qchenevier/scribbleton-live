@@ -23,12 +23,21 @@
           Pattern
           <b-icon :icon="props.open ? 'menu-down' : 'menu-up'"> </b-icon>
         </div>
-        <ParamsEditor
-          :key="playPatternId"
-          :value="playPattern"
-          @input="(v) => $emit('update:playPattern', v)"
-          height="260px"
-        />
+        <b-tooltip
+          label="scribbletune play pattern configuration in YAML, click inside to edit, click outside to save"
+          :delay="1000"
+          type="is-link"
+          position="is-top"
+          multilined
+          style="width: 100%;"
+        >
+          <ParamsEditor
+            :key="playPatternId"
+            :value="playPattern"
+            @input="(v) => $emit('update:playPattern', v)"
+            height="260px"
+          />
+        </b-tooltip>
       </b-collapse>
 
       <b-collapse

@@ -18,12 +18,21 @@
         />
       </b-tooltip>
     </div>
-    <ParamsEditor
-      :key="`instrument-editor-${id}`"
-      v-model="input.params"
-      :height="height"
-      :defaultValue="defaultValue"
-    />
+    <b-tooltip
+      label="Tone.js instrument/effect configuration in YAML, highlighting the diff with default parameters, click inside to edit, click outside to save"
+      :delay="1000"
+      type="is-link"
+      position="is-top"
+      multilined
+      style="width: 100%;"
+    >
+      <ParamsEditor
+        :key="`instrument-editor-${id}`"
+        v-model="input.params"
+        :height="height"
+        :defaultValue="defaultValue"
+      />
+    </b-tooltip>
   </div>
 </template>
 

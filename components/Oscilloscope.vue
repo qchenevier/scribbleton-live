@@ -1,13 +1,21 @@
 <template>
-  <div @click="toggleActive">
-    <VueP5 v-if="isActive" @setup="setup" @draw="draw" />
-    <b-skeleton
-      width="260px"
-      height="56px"
-      :animated="false"
-      v-if="!isActive"
-    />
-  </div>
+  <b-tooltip
+    label="Oscilloscope displaying waveform & spectrogram of audio"
+    :delay="1000"
+    type="is-link"
+    position="is-bottom"
+    multilined
+  >
+    <div @click="toggleActive">
+      <VueP5 v-if="isActive" @setup="setup" @draw="draw" />
+      <b-skeleton
+        width="260px"
+        height="56px"
+        :animated="false"
+        v-if="!isActive"
+      />
+    </div>
+  </b-tooltip>
 </template>
 
 <script>
