@@ -212,9 +212,10 @@ export default {
     },
     createChannel([id, channel]) {
       if (channel?.instrument?.name && channel?.clips) {
-        this.toneInstruments[id] = new Tone.PolySynth(
-          Tone[channel.instrument.name]
-        )
+        this.toneInstruments[id] =
+          channel.instrument.name === 'NoiseSynth'
+            ? new Tone[channel.instrument.name]()
+            : new Tone.PolySynth(Tone[channel.instrument.name])
         this.updateToneInstrumentsParams()
         const effects = this.createToneEffects(id, channel)
         this.updateToneEffectsParams()
