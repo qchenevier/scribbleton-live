@@ -54,13 +54,6 @@ function randomHash() {
     .padStart(6, '0')
 }
 
-scribble.addChord(['1P', '5P', '8P', '12P'], [], 'D')
-scribble.addChord(['1P', '5P', '8P', '10M', '12P'], [], 'DM')
-scribble.addChord(['1P', '5P', '8P', '10m', '12P'], [], 'Dm')
-scribble.addChord(['1P', '5P', '8P', '12P', '15P', '19P'], [], 'T')
-scribble.addChord(['1P', '5P', '8P', '12P', '15P', '17M', '19P'], [], 'TM')
-scribble.addChord(['1P', '5P', '8P', '12P', '15P', '17m', '19P'], [], 'Tm')
-
 export default {
   components: {
     Channel,

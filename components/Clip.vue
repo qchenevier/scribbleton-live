@@ -26,8 +26,8 @@ export default {
       default() {
         return [
           {
-            notes: 'CD-2 CDM-2 ET-1 ETM-1',
-            pattern: 'x_x_x_x_',
+            notes: 'CM-3 Em-3 Dm-3 FM-3',
+            pattern: 'x__[-x]x__[-x]',
           },
         ]
       },
