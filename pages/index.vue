@@ -172,13 +172,12 @@ export default {
     },
     cancelToneTransport() {
       this.isPlaying = false
-      this.tonePlayPause() // can't wait for the "isPlaying" watcher to be triggered, otherwise, offline rendered player have a huge offset.
+      this.tonePlayPause() // can't wait for the "isPlaying" watcher to be triggered, otherwise offline rendered players have a huge offset.
       Tone.Transport.cancel()
       Tone.Transport.stop()
     },
     tonePlayPause() {
       this.isPlaying ? Tone.Transport.start() : Tone.Transport.pause()
-      // this.isPlaying ? Tone.Transport.start() : Tone.Transport.stop();
     },
     addChannel(channel) {
       let id = randomHash()
