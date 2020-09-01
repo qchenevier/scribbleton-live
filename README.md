@@ -13,16 +13,19 @@ You can check the [demo here](https://scribbleton.live/).
 - `git clone` the repo
 - `npm install` to install the project deencies
 - `npm run dev` to start the app development server
-- go to http://localhost:8080 to see the app
+- go to http://localhost:3000 to see the app
 
 ## Deployment
 
+Online deployment:
+
 - see the deployment workflow with Github Actions
 
-or
+or local deployment:
 
-- `npm run generate` to build & export single-page app
-- `npm run serve` to serve the `dist` folder
+- `npm run generate:local` to build & export single-page app
+- `npm run serve:local` to serve the `dist` folder
+- go to http://localhost:3000 to see the app
 
 ### Sources of inspiration
 

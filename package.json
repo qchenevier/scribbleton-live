@@ -7,9 +7,9 @@
     "dev": "nuxt-ts dev",
     "generate": "nuxt-ts generate",
     "start": "nuxt-ts start",
-    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt-ts build",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt-ts generate",
-    "start:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt-ts start",
+    "build:local": "DEPLOY_ENV=GH_PAGES nuxt-ts build",
+    "generate:local": "DEPLOY_ENV=GH_PAGES nuxt-ts generate",
+    "start:local": "DEPLOY_ENV=GH_PAGES nuxt-ts start",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js"
   },
