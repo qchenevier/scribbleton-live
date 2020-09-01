@@ -4,7 +4,7 @@
       key-event="keydown"
       :key-code="32"
       :modifiers="['shiftKey']"
-      @success="$emit('toggleVariable', 'isPlaying')"
+      @success="!isRendering ? $emit('toggleVariable', 'isPlaying') : undefined"
     />
     <div class="container is-fluid">
       <div class="columns" style="margin-bottom: -1.7rem;">
