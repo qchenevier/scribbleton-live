@@ -172,6 +172,7 @@ export default {
         'StereoWidener',
         'Tremolo',
         'Vibrato',
+        'Compressor',
       ],
       animals,
       superbs,
