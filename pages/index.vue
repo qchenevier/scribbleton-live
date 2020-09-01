@@ -48,6 +48,8 @@ import PlayPattern from '~/components/PlayPattern.vue'
 import MainControls from '~/components/MainControls.vue'
 import MarkdownModal from '~/components/MarkdownModal.vue'
 
+window.scribble = scribble
+
 function randomHash() {
   return Math.floor(Math.random() * 0xffffff)
     .toString(16)
