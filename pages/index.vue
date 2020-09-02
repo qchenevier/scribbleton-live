@@ -8,7 +8,7 @@
 
     <MainControls
       :isPlaying="isPlaying"
-      :isRendering="isRendering"
+      :isLoading="isLoading"
       :isAutoReplay="isAutoReplay"
       :songName.sync="songName"
       @toggleVariable="toggleVariable"
@@ -72,6 +72,7 @@ export default {
       session: undefined,
       isPlaying: false,
       isRendering: false,
+      isLoadingBuffer: false,
       isAutoReplay: false,
       isPlayPattern: true,
       rowNumberToPlay: 0,
@@ -115,9 +116,12 @@ export default {
               clips: c?.clips,
               offlineRendering: c?.offlineRendering,
               idx: c?.idx,
-              instrumentParams: c?.offlineRendering
-                ? c?.instrument?.params
-                : undefined,
+              instrumentParams:
+                c?.offlineRendering ||
+                c?.instrument?.name === 'Player' ||
+                c?.instrument?.name === 'Sampler'
+                  ? c?.instrument?.params
+                  : undefined,
               effectParams: c?.offlineRendering
                 ? c?.effects
                   ? Object.values(c.effects).map((e) => e?.params)
@@ -141,7 +145,11 @@ export default {
     },
     watchInstrumentParamsForUpdate() {
       return Object.values(this.channels).map((c) =>
-        !c?.offlineRendering ? c?.instrument?.params : undefined
+        c?.offlineRendering ||
+        c?.instrument?.name === 'Player' ||
+        c?.instrument?.name === 'Sampler'
+          ? undefined
+          : c?.instrument?.params
       )
     },
     watchEffectParamsForUpdate() {
@@ -152,6 +160,9 @@ export default {
           ? Object.values(c.effects).map((e) => e?.params)
           : undefined
       )
+    },
+    isLoading() {
+      return this.isRendering || this.isLoadingBuffer
     },
   },
   methods: {
@@ -208,9 +219,15 @@ export default {
       if (channel?.instrument?.name && channel?.clips) {
         this.toneInstruments[id] =
           channel.instrument.name === 'NoiseSynth'
-            ? new Tone[channel.instrument.name]()
-            : new Tone.PolySynth(Tone[channel.instrument.name])
-        this.updateToneInstrumentsParams()
+            ? new Tone[channel.instrument.name](channel?.instrument?.params)
+            : channel.instrument.name === 'Player'
+            ? new Tone[channel.instrument.name](channel?.instrument?.params)
+            : channel.instrument.name === 'Sampler'
+            ? new Tone[channel.instrument.name](channel?.instrument?.params)
+            : new Tone.PolySynth(
+                Tone[channel.instrument.name],
+                channel?.instrument?.params
+              )
         const effects = this.createToneEffects(id, channel)
         this.updateToneEffectsParams()
         if (channel.offlineRendering) {

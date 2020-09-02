@@ -152,6 +152,8 @@ export default {
         'NoiseSynth',
         'PluckSynth',
         'Synth',
+        'Sampler',
+        'Player',
       ],
       effectNames: [
         'AutoFilter',

@@ -4,7 +4,7 @@
       key-event="keydown"
       :key-code="32"
       :modifiers="['shiftKey']"
-      @success="!isRendering ? $emit('toggleVariable', 'isPlaying') : undefined"
+      @success="!isLoading ? $emit('toggleVariable', 'isPlaying') : undefined"
     />
     <div class="container is-fluid">
       <div class="columns" style="margin-bottom: -1.7rem;">
@@ -42,7 +42,7 @@
                 rounded
                 :type="this.isPlaying ? 'is-dark' : 'is-link'"
                 @click="$emit('toggleVariable', 'isPlaying')"
-                :loading="this.isRendering"
+                :loading="this.isLoading"
                 :icon-left="this.isPlaying ? 'pause' : 'play'"
               />
             </b-tooltip>
@@ -87,7 +87,7 @@ export default {
   components: { KeyPress },
   props: {
     isPlaying: { default: false },
-    isRendering: { default: false },
+    isLoading: { default: false },
     isAutoReplay: { default: false },
     songName: { default: undefined },
   },

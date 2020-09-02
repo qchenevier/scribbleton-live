@@ -79,6 +79,13 @@ export default {
     'input.name': {
       handler() {
         this.input.params = new Tone[this.input.name]().get()
+        delete this.input.params.onerror
+        delete this.input.params.onload
+        if (this.input.name === 'Player') {
+          delete this.input.params.mute
+          delete this.input.params.autostart
+          this.input.params.url = undefined
+        }
         this.defaultValue = this.input.params
       },
     },
