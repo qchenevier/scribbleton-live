@@ -75,7 +75,7 @@
             position="is-bottom"
             multilined
           >
-            <div class="level" @click="$emit('activeDocModal')">
+            <div class="level" @click="$emit('activeModal', 'documentation')">
               <b-icon icon="book-open" />
               <span>Documentation</span>
             </div>
@@ -89,7 +89,7 @@
             position="is-bottom"
             multilined
           >
-            <div class="level" @click="$emit('activeAboutModal')">
+            <div class="level" @click="$emit('activeModal', 'about')">
               <b-icon icon="information-outline" />
               <span>About</span>
             </div>
@@ -167,8 +167,6 @@ export default {
       if (this.$route.query.state) {
         let input = JSON.parse(
           buffer.Buffer.from(this.$route.query.state, 'base64').toString()
-          //   "ascii"
-          // )
         )
         this.$emit('input', input)
         this.resetUrlState()

@@ -2,8 +2,11 @@
   <div>
     <NavBar
       v-model="scribbletonLiveSession"
-      @activeDocModal="isDocModalActive = true"
-      @activeAboutModal="isAboutModalActive = true"
+      @activeModal="
+        (v) => {
+          activeModal = v
+        }
+      "
     />
 
     <MainControls
@@ -30,11 +33,8 @@
         @close="removeChannel"
       />
     </div>
-    <b-modal v-model="isDocModalActive">
-      <MarkdownModal file="doc" />
-    </b-modal>
-    <b-modal v-model="isAboutModalActive">
-      <MarkdownModal file="about" />
+    <b-modal v-model="isActiveModal">
+      <MarkdownModal :file="activeModal" />
     </b-modal>
   </div>
 </template>
@@ -82,8 +82,7 @@ export default {
         channelPatterns: [],
       },
       songName: undefined,
-      isDocModalActive: false,
-      isAboutModalActive: false,
+      activeModal: false,
     }
   },
   computed: {
@@ -163,6 +162,16 @@ export default {
     },
     isLoading() {
       return this.isRendering || this.isLoadingBuffer
+    },
+    isActiveModal: {
+      get() {
+        return Boolean(this.activeModal)
+      },
+      set(booleanActiveModal) {
+        if (!booleanActiveModal) {
+          this.activeModal = false
+        }
+      },
     },
   },
   methods: {
