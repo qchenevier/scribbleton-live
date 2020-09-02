@@ -67,7 +67,7 @@
         </b-navbar-item>
       </b-navbar-dropdown>
       <b-navbar-dropdown label="Help" hoverable>
-        <b-navbar-item>
+        <b-navbar-item tag="nuxt-link" to="/?modal=documentation">
           <b-tooltip
             label="Documentation of the app & references to other documentations"
             :delay="1000"
@@ -75,13 +75,13 @@
             position="is-bottom"
             multilined
           >
-            <div class="level" @click="$emit('activeModal', 'documentation')">
+            <div class="level">
               <b-icon icon="book-open" />
               <span>Documentation</span>
             </div>
           </b-tooltip>
         </b-navbar-item>
-        <b-navbar-item>
+        <b-navbar-item tag="nuxt-link" to="/?modal=about">
           <b-tooltip
             label="About this app: why? who?"
             :delay="1000"
@@ -89,7 +89,7 @@
             position="is-bottom"
             multilined
           >
-            <div class="level" @click="$emit('activeModal', 'about')">
+            <div class="level">
               <b-icon icon="information-outline" />
               <span>About</span>
             </div>

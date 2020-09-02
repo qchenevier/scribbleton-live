@@ -1,13 +1,6 @@
 <template>
   <div>
-    <NavBar
-      v-model="scribbletonLiveSession"
-      @activeModal="
-        (v) => {
-          activeModal = v
-        }
-      "
-    />
+    <NavBar v-model="scribbletonLiveSession" />
 
     <MainControls
       :isPlaying="isPlaying"
@@ -169,7 +162,7 @@ export default {
       },
       set(booleanActiveModal) {
         if (!booleanActiveModal) {
-          this.activeModal = false
+          this.resetModalState()
         }
       },
     },
@@ -346,6 +339,22 @@ export default {
       )
       this.playPatternId = randomHash() // force update the component
     },
+    displayModal() {
+      if (this.$route.query.modal) {
+        this.activeModal = this.$route.query.modal
+      }
+    },
+    resetModalState() {
+      this.activeModal = null
+      if (this.$route.query.modal) {
+        let query = Object.assign({}, this.$route.query)
+        delete query.modal
+        this.$router.replace({ query })
+      }
+    },
+  },
+  mounted() {
+    this.displayModal()
   },
   watch: {
     watchPropsForSessionRebuild: {
@@ -384,6 +393,11 @@ export default {
       deep: true,
       handler() {
         this.updatePlayPattern()
+      },
+    },
+    '$route.query.modal': {
+      handler() {
+        this.displayModal()
       },
     },
   },
