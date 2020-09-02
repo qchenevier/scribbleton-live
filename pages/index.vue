@@ -246,34 +246,74 @@ export default {
         this.session.createChannel(channelParams)
       }
     },
-    createSession() {
+    initSession() {
       this.cancelToneTransport()
       this.session = new scribble.Session()
       this.toneInstruments = {}
       this.toneEffects = {}
-      Object.entries(this.channels)
-        .filter(([id, channel]) => channel?.isActive)
-        .forEach(this.createChannel)
-      this.createToneTransport()
+      this.isLoadingBuffer = false
+    },
+    notifyError(error) {
+      this.$buefy.notification.open({
+        message: error.toString(),
+        type: 'is-danger',
+        hasIcon: true,
+        indefinite: true,
+        queue: false,
+      })
+    },
+    createSession() {
+      this.initSession()
+      try {
+        this.isLoadingBuffer = true
+        Object.entries(this.channels)
+          .filter(([id, channel]) => channel?.isActive)
+          .forEach(this.createChannel)
+        Tone.loaded().then(() => {
+          this.isLoadingBuffer = false
+        })
+        this.createToneTransport()
+      } catch (error) {
+        this.initSession()
+        this.notifyError(error)
+      }
     },
     updateToneInstrumentsParams() {
-      Object.entries(this.channels).forEach(([id, channel]) => {
-        if (channel?.instrument?.params && this.toneInstruments[id]) {
-          this.toneInstruments[id].set(channel.instrument.params)
-        }
-      })
+      try {
+        Object.entries(this.channels).forEach(([id, channel]) => {
+          if (channel?.instrument?.params && this.toneInstruments[id]) {
+            const {
+              url,
+              baseUrl,
+              urls,
+              ...paramsWithoutUrl
+            } = channel.instrument.params
+            if (paramsWithoutUrl) {
+              this.toneInstruments[id].set(paramsWithoutUrl)
+            }
+          }
+        })
+      } catch (error) {
+        this.initSession()
+        this.notifyError(error)
+      }
     },
     updateToneEffectsParams() {
-      Object.entries(this.channels).forEach(([id, channel]) => {
-        if (channel) {
-          Object.entries(channel.effects).forEach(([idEffect, effect]) => {
-            let idFull = `${id}-${idEffect}`
-            if (effect?.params && this.toneEffects[idFull]) {
-              this.toneEffects[idFull].set(effect.params)
-            }
-          })
-        }
-      })
+      try {
+        Object.entries(this.channels).forEach(([id, channel]) => {
+          if (channel) {
+            Object.entries(channel.effects).forEach(([idEffect, effect]) => {
+              let idFull = `${id}-${idEffect}`
+              if (effect?.params && this.toneEffects[idFull]) {
+                this.toneEffects[idFull].set(effect.params)
+              }
+            })
+          }
+        })
+      } catch (error) {
+        this.initSession()
+        this.notifyError(error)
+      }
     },
     updatePlayPattern() {
       this.$set(
@@ -308,12 +348,18 @@ export default {
     watchInstrumentParamsForUpdate: {
       deep: true,
       handler() {
+        if (!Object.keys(this.toneInstruments).length) {
+          this.createSession()
+        }
         this.updateToneInstrumentsParams()
       },
     },
     watchEffectParamsForUpdate: {
       deep: true,
       handler() {
+        if (!Object.keys(this.toneInstruments).length) {
+          this.createSession()
+        }
         this.updateToneEffectsParams()
       },
     },
