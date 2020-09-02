@@ -7,6 +7,10 @@ const routerBase =
       }
     : {}
 
+const fs = require('fs')
+const packageJson = fs.readFileSync('./package.json')
+const version = JSON.parse(packageJson).version || 0
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -79,4 +83,5 @@ export default {
     },
   },
   ...routerBase,
+  env: { version },
 }

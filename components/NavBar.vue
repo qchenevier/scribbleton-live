@@ -11,7 +11,7 @@
           />
           Scribbleton Live
           <sub style="font-size: 0.5em;" class="has-text-weight-normal">
-            alpha
+            v{{ version }}
           </sub>
         </h1>
       </b-navbar-item>
@@ -130,6 +130,9 @@ export default {
   computed: {
     valueBase64() {
       return buffer.Buffer.from(JSON.stringify(this.value)).toString('base64')
+    },
+    version() {
+      return process.env.version
     },
   },
   methods: {
