@@ -47,7 +47,7 @@ The design of this API started in 2011, but it is still a [W3C draft](https://we
 
 [Scribbleton Live](http://scribbleton.live) is fully **open source**, you can [browse the code & fork the project on GitHub](https://github.com/qchenevier/scribbleton-live/). Contributions are welcome !
 
-This is an experimental tool which doesn't , not to make a business of it, so **it is (and will always be) free**.
+This is an experimental tool, the goal isn't to make a business out of it, so **it is and will always be free**.
 
 ### Privacy by design
 

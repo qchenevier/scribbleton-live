@@ -16,10 +16,10 @@
         </ul>
       </div>
       <div class="content">
-        Those links are also available in the <i>Help</i> menu above ⬆
+        Those links are also available in the <b>Help</b> menu above ⬆
       </div>
       <div class="content">
-        Then click on the <i>Add channel</i> button & start making music! 🤘
+        Then click on the <b>Add channel</b> button & start making music! 🤘
       </div>
     </div>
   </div>
