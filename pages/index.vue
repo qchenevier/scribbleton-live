@@ -19,6 +19,7 @@
         :rowNumberToPlay.sync="rowNumberToPlay"
         @toggleVariable="toggleVariable"
       />
+      <ChannelPlaceholder v-if="!Object.values(channels).length" />
       <Channel
         v-for="(channel, id) in channels"
         :key="`channel-${id}`"
@@ -36,6 +37,7 @@
 import * as scribble from 'scribbletune'
 
 import Channel from '~/components/Channel.vue'
+import ChannelPlaceholder from '~/components/ChannelPlaceholder.vue'
 import NavBar from '~/components/NavBar.vue'
 import PlayPattern from '~/components/PlayPattern.vue'
 import MainControls from '~/components/MainControls.vue'
