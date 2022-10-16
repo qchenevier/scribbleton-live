@@ -18,7 +18,7 @@ jobs:
       - name: Install and Generate 🔧
         run: |
           npm install
-          npm run generate
+          npm run generate:github
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.5.7

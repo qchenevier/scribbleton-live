@@ -23,8 +23,8 @@ Online deployment:
 
 or local deployment:
 
-- `npm run generate:local` to build & export single-page app
-- `npm run serve:local` to serve the `dist` folder
+- `npm run generate` to build & export single-page app
+- `npm run serve` to serve the `dist` folder
 - go to http://localhost:3000 to see the app
 
 ### Sources of inspiration
