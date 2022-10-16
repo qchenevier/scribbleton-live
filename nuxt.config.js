@@ -14,9 +14,9 @@ const version = JSON.parse(packageJson).version || 0
 export default {
   /*
    ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
+   ** See https://nuxtjs.org/docs/configuration-glossary/configuration-ssr
    */
-  mode: 'spa',
+  ssr: 'false',
   /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
