@@ -52,7 +52,13 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ['@/plugins/vue-clipboard.js', '@/plugins/vue-scrollactive.js'],
+  plugins: [
+    { src: '@/plugins/vue-clipboard', ssr: false },
+    { src: '@/plugins/vue-scrollactive', ssr: false },
+    { src: '@/plugins/vue-codemirror', ssr: false },
+    { src: '@/plugins/vue-p5', ssr: false },
+    { src: '@/plugins/vue-scribbletune', ssr: false },
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

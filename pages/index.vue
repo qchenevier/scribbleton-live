@@ -34,16 +34,12 @@
 </template>
 
 <script>
-import * as scribble from 'scribbletune'
-
 import Channel from '~/components/Channel.vue'
 import ChannelPlaceholder from '~/components/ChannelPlaceholder.vue'
 import NavBar from '~/components/NavBar.vue'
 import PlayPattern from '~/components/PlayPattern.vue'
 import MainControls from '~/components/MainControls.vue'
 import MarkdownModal from '~/components/MarkdownModal.vue'
-
-window.scribble = scribble
 
 function randomHash() {
   return Math.floor(Math.random() * 0xffffff)
@@ -54,6 +50,7 @@ function randomHash() {
 export default {
   components: {
     Channel,
+    ChannelPlaceholder,
     NavBar,
     PlayPattern,
     MainControls,

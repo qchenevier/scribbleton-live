@@ -1,32 +1,27 @@
 <template lang="html">
   <div>
-    <codemirror
-      :ref="`editor-${id}`"
-      :key="`editor-${id}`"
-      v-model="input"
-      @focus="setCodeMirrorBackground('#3273DC0C')"
-      @blur="
-        $emit('input', YAML.parse(input))
-        setCodeMirrorBackground('#FFFFFF')
-      "
-      :options="editorOptions"
-    >
-    </codemirror>
+    <client-only>
+      <codemirror
+        :ref="`editor-${id}`"
+        :key="`editor-${id}`"
+        v-model="input"
+        @focus="setCodeMirrorBackground('#3273DC0C')"
+        @blur="
+          $emit('input', YAML.parse(input))
+          setCodeMirrorBackground('#FFFFFF')
+        "
+        :options="editorOptions"
+      >
+      </codemirror>
+    </client-only>
   </div>
 </template>
 
 <script>
-import { codemirror } from 'vue-codemirror'
-import 'codemirror/lib/codemirror.css'
-import 'codemirror/addon/scroll/simplescrollbars.css'
-import 'codemirror/addon/scroll/simplescrollbars'
-import 'codemirror/mode/yaml/yaml'
-
 import YAML from 'yaml'
 import * as Diff from 'diff'
 
 export default {
-  components: { codemirror },
   props: {
     value: {},
     editorOptions: {

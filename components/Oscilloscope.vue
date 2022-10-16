@@ -7,7 +7,9 @@
     multilined
   >
     <div @click="toggleActive">
-      <VueP5 v-if="isActive" @setup="setup" @draw="draw" />
+      <client-only>
+        <VueP5 v-if="isActive" @setup="setup" @draw="draw" />
+      </client-only>
       <b-skeleton
         width="260px"
         height="56px"
@@ -19,10 +21,7 @@
 </template>
 
 <script>
-import VueP5 from 'vue-p5'
-
 export default {
-  components: { VueP5 },
   data() {
     return {
       mic: undefined,
