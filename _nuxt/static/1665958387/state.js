@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fscribbleton-live\u002F_nuxt\u002Fstatic\u002F1665958387",layout:"default",error:a,serverRendered:true,routePath:"\u002F",config:{_app:{basePath:"\u002Fscribbleton-live\u002F",assetsPath:"\u002Fscribbleton-live\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"bc142f03"}}}}(null));
