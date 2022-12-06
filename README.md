@@ -6,7 +6,7 @@ A light digital audio workstation, fully in-browser, leveraging WebAudio, built 
 - [Vue.js](https://vuejs.org/)
 - [Nuxt.js](https://nuxtjs.org/)
 
-You can check the [demo here](https://scribbleton.live/).
+You can check the [demo here](https://qchenevier.github.io/scribbleton-live/).
 
 ## Installation & Usage
 
